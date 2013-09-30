@@ -1,6 +1,8 @@
 # Qt Packager Plugin
 
-Dummy packager for demo purpose. Basically packager takes bunch of files in a folder, then package them into one file.
+Dummy packager for demo purpose. 
+
+Basically packager takes bunch of files in a folder, then package them into one file. And vice versa.
 
 Friend of [download host](https://github.com/arifsetiawan/qt-download-host)
 
