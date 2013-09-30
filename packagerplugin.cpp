@@ -40,7 +40,7 @@ bool PackagerPlugin::pack(const QString &path, const QString &name)
         char *data = new char[size];
         memset(data,'-',size);
         file->seek(i*size);
-        file->writeData(reinterpret_cast<const char*>(data), size);
+        file->write(reinterpret_cast<const char*>(data), size);
         delete[] data;
     }
 
@@ -58,7 +58,7 @@ bool PackagerPlugin::unpack(const QString &name, const QString &path)
         if (file->open(QIODevice::WriteOnly)) {
             char *data = new char[size];
             memset(data,'-',size);
-            file->writeData(reinterpret_cast<const char*>(data), size);
+            file->write(reinterpret_cast<const char*>(data), size);
             delete[] data;
         }
         file->close();
