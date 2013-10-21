@@ -36,7 +36,7 @@ bool PackagerPlugin::pack(const QString &path, const QString &name)
     }
 
     int size = 1048576;
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 2; i++) {
         char *data = new char[size];
         memset(data,'-',size);
         file->seek(i*size);
